@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'KoHo';
+  src: url('KoHo-Regular.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'KoHo', sans-serif;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  height: 80px;
+}
+
+.header {
+  height: 340px;
+}
+
+.presentation {
+  flex-direction: column;
+}
+
+a {
+  text-decoration-color: #757575;
+}
+
+.box img {
+  width: 25px;
+}
+
+.carousel{
+  background: #2f4357;
+}
+
+.carousel-item{
+  text-align: center;
+  min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+}
+
+.myself {
+  flex-direction: column;
+}
+
+.myphoto {
+  margin-bottom: 20px;
+}
+
+.myphoto img {
+  width: 200px;
+}
+
+.aboutme {
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.aboutme h4 {
+  margin-top: 50px;
+}
+
+.card {
+  padding: 8px;
+  height: 165px;
+  margin: 10px;
+  background-image: url(images/star.jpg);
+}
+
+a:link {
+  text-decoration: none;
+  color: grey;
+}
+
+a:visited {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  color: black;
+}
+
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .myself {
+    flex-direction: row;
+  }
+
+  .myphoto,
+  .aboutme,
+  .service {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 1020px;
+    margin: 0 auto;
+  }
+
+  .carousel {
+    margin: 20px;
+  }
+
+  .myself {
+    margin: 10px;
+    flex-direction: row;
+  }
+
+  .myphoto,
+  .aboutme {
+    width: 50%;
+  }
+
+
+  .service {
+    width: 25%;
+  }
+}
